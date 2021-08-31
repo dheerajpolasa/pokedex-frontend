@@ -1,0 +1,131 @@
+.detail-container {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    background: #83eec5;
+    color: white;
+    z-index: -1;
+    height: 50vh;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details > h3 {
+    width: 100vw;
+    margin-top: 5%;
+}
+
+.details > div {
+    display: flex;
+}
+
+.details > div > h5 {
+    width: 20vw;
+    margin: 2% 2% 2% 2%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    border-radius: 20px;
+    background: rgb(153, 209, 142);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.image-container > img {
+    z-index: 2000;
+}
+
+.bottom-sheet {
+    display: flex;
+    z-index: 20;
+    transform: translate(0%, -18%);
+    width: 100vw;
+    height: 60vh;
+    background: white;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+@media only screen and (min-width: 470px) {
+   .image-container > img {
+       width: 50vw;
+       height: 20vh;
+   }
+   .details > div > h3 {
+       font-size: 1rem;
+   }
+   .details > h3 {
+    font-size: 2rem;
+   }
+}
+
+@media only screen and (min-width: 600px) {
+    .image-container > img {
+        width: 50vw;
+        height: 15vh;
+    }
+    .details > div > h3 {
+        font-size: 0.5rem;
+    }
+    .details > h3 {
+     font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    
+}
+
+@media only screen and (min-width: 720px) {
+    .image-container > img {
+
+    }
+    .details > div {
+        display: flex;
+        height: 50vh;
+    }
+    .details > div > h3 {
+        font-size: 2rem;
+        border: 2px solid black;
+    }
+    .details > h3 {
+        font-size: 3rem;
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .detalis > div {
+        display: flex;
+        height: 50vh;
+    }
+    .image-container > img {
+        width: 50vw;
+        border: 2px solid black;
+        transform: translateY(20%);
+    }
+    .details > div > h3  {
+        font-size: 10px;
+        height: 1vh;
+        margin: 1% 1% 1% 1%;
+        width: 25vw;
+    }
+    .details > h3 {
+        font-size: 20px;
+    }
+}

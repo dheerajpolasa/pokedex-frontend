@@ -1,0 +1,85 @@
+.home {
+    display: flex;
+    /* width: 100vw; */
+    flex-direction: column;
+    padding: 20% 5% 5% 5%;
+    background-color: #FFFAFA;
+    /* border: 2px solid black; */
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin-top: 10%;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    /* background-color: rgba(207, 55, 139, 0.959); */
+    background-color: #FFFAFA;
+    /* box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2); */
+    box-shadow: inset 0px 1px 8px #FFFAFA;
+}
+
+.search-container .MuiSvgIcon-root {
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.search-container form {
+    flex: 1;
+}
+
+.search-container form input {
+    padding: 10px;
+    margin-left: 1%;
+    width: 90%;
+    border: none;
+    background-color: inherit;
+}
+
+@media only screen and (min-width: 320px) {
+    .search-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .search-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .search-container {
+        width: 70%;
+    }
+}
+
+.homepage_cards {
+    margin-top: 5%;
+    /* margin: 5% 2% 2% 3%; */
+    display: flex;
+    /* padding-left: calc(100% - 95%); */
+    /* width: 100vw; */
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+
+.homepage_footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    /* zoom: 5000%; */
+}
+
+.homepage_footer img {
+    height: 500px;
+    overflow-y: hidden;
+    position: absoulte;
+    filter: drop-shadow(-4mm 8mm 1mm rgb(131, 84, 93));
+}

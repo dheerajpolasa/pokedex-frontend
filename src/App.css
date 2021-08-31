@@ -1,0 +1,37 @@
+.App {
+  text-align: left;
+  /* height: 100vh; */
+  position: relative;
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: transparent url("./images/empty-plate.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position: 120% -20%; */
+  background-position: 130% -12%;
+  background-size: 200px 200px;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  z-index: -1;
+  background-color: #FFFAFA;
+}
+
+@media only screen and (min-width: 750px) {
+  .App::before {
+    background-position: 100% 0%;
+    background-size: 400px 400px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .App::before {
+    background-position: 120% -20%;
+    background-size: 300px 300px;
+  }
+}

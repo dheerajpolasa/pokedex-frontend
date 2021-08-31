@@ -1,0 +1,82 @@
+.homepage_card {
+    width: 35vw;
+    height: 8vh;
+    margin: 5%;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+    font-size: 12px;
+    color: black;
+}
+
+.homepage_card h3 {
+    color:#FFFAFA;
+    background-color: inherit;
+    margin: 10px;
+}
+
+.homepage_card::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../images//empty-plate.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 0%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.1;
+}
+
+.card_green {
+    background-color: #08e691;
+    opacity: 0.9;
+    box-shadow: 5px 5px 20px #08e691;
+
+}
+
+.card_orange {
+    background-color: #e05a0c;
+    opacity: 0.8;
+    box-shadow: 5px 5px 20px #e05a0c;
+}
+
+.card_blue {
+    background-color: #0c92e0;
+    opacity: 0.7;
+    box-shadow: 5px 5px 20px #0c92e0;
+}
+
+.card_yellow {
+    background-color: #9da00e;
+    opacity: 0.8;
+    box-shadow: 5px 5px 20px #9da00e;
+}
+
+.card_violet {
+    background-color: #b265e6;
+    opacity: 0.9;
+    box-shadow: 5px 5px 20px #b265e6;
+}
+
+.card_brown {
+    background-color: #cf378b;
+    opacity: 0.8;
+    box-shadow: 5px 5px 20px #cf378b;
+}
+
+
+@media only screen and (min-width: 750px) {
+    .homepage_card {
+        width: 18vw;
+        height: 10vh;
+    }
+  }
+@media only screen and (min-width: 460px) and (max-width: 768px) {
+    .homepage_card {
+        width: 20vw;
+        height: 8vh;
+    }
+}
